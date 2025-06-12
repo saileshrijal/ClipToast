@@ -10,7 +10,7 @@ public static class SystemTray
     {
         _notifyIcon = new NotifyIcon
         {
-            Icon = SystemIcons.Information,
+            Icon = new Icon(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Assets", "icon.ico")),
             Visible = true,
             Text = "ClipToast"
         };

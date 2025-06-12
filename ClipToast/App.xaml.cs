@@ -20,9 +20,6 @@ public partial class App : Application
         // Start clipboard monitor
         _clipboardMonitor = new ClipboardMonitor();
         _clipboardMonitor.ClipboardChanged += OnClipboardChanged;
-
-        // Initialize tray icon (optional now, for future settings)
-        SystemTray.Initialize();
     }
 
     private static void OnClipboardChanged(object? sender, string copiedText)
